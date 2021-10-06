@@ -86,7 +86,7 @@ public class ExplosionMixin {
     }
 
     private boolean isWithinBounds(int xindex, int yindex, int zindex) {
-        return xindex >= 0 && xindex < 4 && yindex >= 0 && yindex < 4 && zindex >= 0 && zindex < 4;
+        return xindex >= 0 && xindex <= 4 && yindex >= 0 && yindex <= 4 && zindex >= 0 && zindex <= 4;
     }
 
     private boolean isPositionCached(int xindex, int yindex, int zindex) {
